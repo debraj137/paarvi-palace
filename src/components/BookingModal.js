@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import { useState } from "react";
 
 export default function BookingModal({ isOpen, onClose }) {
-    
+
     const [form, setForm] = useState({
         roomType: "",
         name: "",
@@ -133,7 +133,7 @@ Children: ${form.children}
 `;
 
         window.open(
-            `https://wa.me/916000347693?text=${encodeURIComponent(message)}`,
+            `https://wa.me/918123417647?text=${encodeURIComponent(message)}`,
             "_blank"
         );
     };
@@ -179,7 +179,7 @@ Children: ${form.children}
                                 name="roomType"
                                 value={form.roomType}
                                 onChange={handleChange}
-                                className={`w-full bg-transparent border px-4 py-3 rounded-md focus:outline-none ${errors.roomType
+                                className={`w-full bg-white text-[#2b2118] border px-4 py-3 rounded-md focus:outline-none appearance-none ${errors.roomType
                                     ? "border-red-500"
                                     : "border-[#d8cfc4] focus:border-[#c9a24d]"
                                     }`}>
@@ -201,7 +201,7 @@ Children: ${form.children}
                                 value={form.name}
                                 onChange={handleChange}
                                 placeholder="Guest full name"
-                                className="w-full bg-transparent border border-[#d8cfc4] px-4 py-3 rounded-md focus:outline-none focus:border-[#c9a24d]"
+                                className="w-full bg-white text-[#2b2118] border border-[#d8cfc4] px-4 py-3 rounded-md focus:outline-none focus:border-[#c9a24d] appearance-none"
                             />
                         </div>
 
@@ -216,10 +216,11 @@ Children: ${form.children}
                                 value={form.email}
                                 onChange={handleChange}
                                 placeholder="you@example.com"
-                                className={`w-full bg-transparent border px-4 py-3 rounded-md focus:outline-none ${errors.email
+                                className={`w-full bg-white text-[#2b2118] border px-4 py-3 rounded-md focus:outline-none appearance-none ${errors.email
                                     ? "border-red-500"
                                     : "border-[#d8cfc4] focus:border-[#c9a24d]"
                                     }`}
+
                             />
 
                             {errors.email && (
@@ -241,10 +242,11 @@ Children: ${form.children}
                                 value={form.phone}
                                 onChange={handleChange}
                                 placeholder="+91 XXXXX XXXXX"
-                                className={`w-full bg-transparent border px-4 py-3 rounded-md focus:outline-none ${errors.phone
+                                className={`w-full bg-white text-[#2b2118] border px-4 py-3 rounded-md focus:outline-none appearance-none ${errors.phone
                                     ? "border-red-500"
                                     : "border-[#d8cfc4] focus:border-[#c9a24d]"
                                     }`}
+
                             />
 
                             {errors.phone && (
@@ -267,7 +269,8 @@ Children: ${form.children}
                                     value={form.checkIn}
                                     onChange={handleChange}
                                     min={today}
-                                    className="w-full bg-transparent border border-[#d8cfc4] px-4 py-3 rounded-md focus:outline-none focus:border-[#c9a24d]"
+                                    className="w-full bg-white text-[#2b2118] border border-[#d8cfc4] px-4 py-3 rounded-md focus:outline-none focus:border-[#c9a24d] appearance-none"
+
                                 />
                                 {errors.checkIn && (
                                     <p className="mt-1 text-sm text-red-600">
@@ -286,7 +289,8 @@ Children: ${form.children}
                                     value={form.checkOut}
                                     onChange={handleChange}
                                     min={form.checkIn || today}
-                                    className="w-full bg-transparent border border-[#d8cfc4] px-4 py-3 rounded-md focus:outline-none focus:border-[#c9a24d]"
+                                    className="w-full bg-white text-[#2b2118] border border-[#d8cfc4] px-4 py-3 rounded-md focus:outline-none focus:border-[#c9a24d] appearance-none"
+
                                 />
                                 {errors.checkOut && (
                                     <p className="mt-1 text-sm text-red-600">
@@ -306,7 +310,8 @@ Children: ${form.children}
                                     name="adults"
                                     value={form.adults}
                                     onChange={handleChange}
-                                    className="w-full bg-transparent border border-[#d8cfc4] px-4 py-3 rounded-md focus:outline-none focus:border-[#c9a24d]"
+                                    className="w-full bg-white text-[#2b2118] border border-[#d8cfc4] px-4 py-3 rounded-md focus:outline-none focus:border-[#c9a24d] appearance-none"
+
                                 >
                                     {[1, 2, 3, 4, 5].map((n) => (
                                         <option key={n} value={n}>{n}</option>
@@ -322,7 +327,8 @@ Children: ${form.children}
                                     name="children"
                                     value={form.children}
                                     onChange={handleChange}
-                                    className="w-full bg-transparent border border-[#d8cfc4] px-4 py-3 rounded-md focus:outline-none focus:border-[#c9a24d]"
+                                    className="w-full bg-white text-[#2b2118] border border-[#d8cfc4] px-4 py-3 rounded-md focus:outline-none focus:border-[#c9a24d] appearance-none"
+
                                 >
                                     {[0, 1, 2, 3, 4].map((n) => (
                                         <option key={n} value={n}>{n}</option>

@@ -28,7 +28,7 @@ export default function RoomsSection() {
 
           <RoomCard
             title="Deluxe Room"
-            price="₹2,500 / night"
+            price="₹1,499 / night"
             description="Ideal for solo travellers and couples seeking comfort."
             image="/images/rooms/deluxe.jpeg"
             slug="/deluxe-room-in-ayodhya"
@@ -36,7 +36,7 @@ export default function RoomsSection() {
 
           <RoomCard
             title="Executive Room"
-            price="₹3,200 / night"
+            price="₹1,999 / night"
             description="Spacious rooms with enhanced amenities for a relaxed stay."
             image="/images/rooms/executive.jpeg"
             slug="/executive-room-in-ayodhya"
@@ -44,7 +44,7 @@ export default function RoomsSection() {
 
           <RoomCard
             title="Family Suite"
-            price="₹4,500 / night"
+            price="₹2,499 / night"
             description="Perfect for families, offering space and privacy."
             image="/images/rooms/family.jpeg"
             slug="/family-suite-room-in-ayodhya"

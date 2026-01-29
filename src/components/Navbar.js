@@ -8,7 +8,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#faf9f7]/90 backdrop-blur border-b border-[#e6dccf]">
+    <nav className="relative md:sticky md:top-0 z-50 bg-[#faf9f7] md:bg-[#faf9f7]/90 md:backdrop-blur border-b border-[#e6dccf]">
+
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
 
         {/* Brand */}

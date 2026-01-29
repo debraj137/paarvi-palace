@@ -14,7 +14,7 @@ export default function RoomModal({
   const room = rooms[activeIndex];
 
   return (
-    <div className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center">
+    <div className="fixed inset-0 z-[100] bg-black/40 md:bg-black/80 backdrop-blur-sm flex items-center justify-center">
 
       {/* Close */}
       <button

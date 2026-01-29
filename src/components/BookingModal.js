@@ -146,7 +146,7 @@ Children: ${form.children}
 
             {/* Backdrop */}
             <div
-                className="absolute inset-0 bg-black/70"
+                className="absolute inset-0 bg-black/30 md:bg-black/50"
                 onClick={handleClose}
             ></div>
 

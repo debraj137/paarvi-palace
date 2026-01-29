@@ -20,6 +20,10 @@ export const metadata = {
   description: "Experience comfort & luxury at Paarvi Palace Homestay",
 };
 
+export const viewport = {
+  themeColor: "#faf9f7",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

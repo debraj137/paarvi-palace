@@ -1,7 +1,7 @@
 import RoomsSection from "@/components/RoomsSection";
 
 export const metadata = {
-  title: "Rooms & Suites | Paarvi Palace",
+  title: "Rooms & Suites Near Ram Mandir Ayodhya | Paarvi Palace",
   description:
     "Explore our Deluxe Rooms, Executive Rooms, and Family Suites at Paarvi Palace, a peaceful homestay near Ram Mandir, Ayodhya.",
 };

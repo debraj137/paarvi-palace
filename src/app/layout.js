@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Paarvi Palace | Luxury Homestay",
-  description: "Experience comfort & luxury at Paarvi Palace Homestay",
+  metadataBase: new URL("https://paarvipalace.com"),
+  title: "Paarvi Palace | Homestay Near Ram Mandir Ayodhya",
+  description: "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive and Family Suite rooms for solo travellers, couples, families, and pilgrims seeking a comfortable stay.",
 };
 
 export const viewport = {

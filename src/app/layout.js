@@ -17,9 +17,38 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://paarvipalace.com"),
+
   title: "Paarvi Palace | Homestay Near Ram Mandir Ayodhya",
-  description: "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive and Family Suite rooms for solo travellers, couples, families, and pilgrims seeking a comfortable stay.",
+  description:
+    "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive and Family Suite rooms for solo travellers, couples, families, and pilgrims seeking a comfortable stay.",
+
+  openGraph: {
+    title: "Paarvi Palace | Homestay Near Ram Mandir Ayodhya",
+    description:
+      "A peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive & Family Suite rooms.",
+    url: "https://paarvipalace.com",
+    siteName: "Paarvi Palace",
+    images: [
+      {
+        url: "/og-image.png", // place OG image in /public
+        width: 1200,
+        height: 630,
+        alt: "Paarvi Palace – Luxury Homestay in Ayodhya",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Paarvi Palace | Homestay Near Ram Mandir Ayodhya",
+    description:
+      "Luxury homestay near Ram Mandir, Ayodhya. Comfortable Deluxe, Executive & Family Suite rooms.",
+    images: ["/og-image.png"],
+  },
 };
+
 
 export const viewport = {
   themeColor: "#faf9f7",

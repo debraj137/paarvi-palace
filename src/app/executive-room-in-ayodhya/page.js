@@ -1,3 +1,4 @@
+import NearbyAttractions from "@/components/NearbyAttractions";
 import Image from "next/image";
 
 export const metadata = {
@@ -55,17 +56,40 @@ export default function ExecutiveRoomPage() {
               Ayodhya, the Executive Room provides the perfect balance of
               productivity and relaxation.
             </p>
+            {/* KEY FEATURES */}
+            <div className="mt-10">
+              <h3 className="text-xl font-light tracking-wide text-[#2b2118]">
+                Key Features of the Executive Room
+              </h3>
+
+              <ul className="mt-6 space-y-3 text-gray-600 leading-relaxed list-disc list-inside">
+                <li>Spacious room layout with premium interiors</li>
+                <li>Comfortable king-size bed with plush bedding</li>
+                <li>Dedicated work desk ideal for business travellers</li>
+                <li>High-speed Wi-Fi, flat-screen TV, and modern amenities</li>
+                <li>Air-conditioned room with geyser and 24/7 hot water</li>
+                <li>24×7 room service and daily housekeeping</li>
+              </ul>
+            </div>
+
+            <NearbyAttractions />
           </div>
 
           {/* RIGHT – FEATURES */}
           <div className="grid grid-cols-2 gap-6">
             {[
-              "Spacious room with premium interiors",
-              "Comfortable seating area",
-              "Air-conditioning & high-speed Wi-Fi",
-              "Dedicated work desk",
-              "Large wardrobe & storage",
-              "24×7 room service",
+              // "Spacious room with premium interiors",
+              // "Comfortable seating area",
+              // "Air-conditioning & high-speed Wi-Fi",
+              // "Dedicated work desk",
+              // "Large wardrobe & storage",
+              // "24×7 room service",
+              "Spacious interiors with premium furnishings",
+              "Dedicated work desk for business travellers",
+              "High-speed Wi-Fi & uninterrupted connectivity",
+              "Comfortable seating area for relaxation",
+              "Air-conditioned room with controlled lighting",
+              "24×7 room service & in-room dining",
             ].map((item, i) => (
               <div
                 key={i}

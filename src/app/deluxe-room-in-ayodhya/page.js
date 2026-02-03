@@ -1,3 +1,4 @@
+import NearbyAttractions from "@/components/NearbyAttractions";
 import Image from "next/image";
 
 export const metadata = {
@@ -55,17 +56,44 @@ export default function DeluxeRoomPage() {
               ensures rest, privacy, and convenience just minutes from
               Ram Mandir.
             </p>
+            {/* KEY FEATURES */}
+            <div className="mt-10">
+              <h3 className="text-xl font-light tracking-wide text-[#2b2118]">
+                Key Features of the Deluxe Room
+              </h3>
+
+              <ul className="mt-6 space-y-3 text-gray-600 leading-relaxed list-disc list-inside">
+                <li>Spacious interiors suitable for solo travellers, couples, and small families</li>
+                <li>One king-size bed with plush bedding for two guests</li>
+                <li>Air-conditioned room with geyser and 24/7 hot water</li>
+                <li>High-speed Wi-Fi, flat-screen TV, and modern amenities</li>
+                <li>Dedicated work desk ideal for business travellers</li>
+                <li>24×7 room service and daily housekeeping</li>
+              </ul>
+            </div>
+            <NearbyAttractions/>
           </div>
 
           {/* RIGHT – FEATURES */}
           <div className="grid grid-cols-2 gap-6">
             {[
-              "King-size bed with premium linens",
-              "Air-conditioned comfort",
-              "Free high-speed Wi-Fi",
-              "LED TV with channels",
-              "Modern attached bathroom",
-              "In-room dining & service",
+              // "King-size bed with premium linens",
+              // "Air-conditioned comfort",
+              // "Free high-speed Wi-Fi",
+              // "LED TV with channels",
+              // "Modern attached bathroom",
+              // "In-room dining & service",
+
+              "Spacious interiors designed for comfort",
+              "One king-size bed for two guests",
+              "Air-conditioned room with geyser",
+              "High-speed Wi-Fi & flat-screen TV",
+              "Modern attached bathroom with hot water",
+              "Dedicated work desk for business travellers",
+              "24×7 room service & housekeeping",
+              "On-site parking space for up to 15 cars",
+
+
             ].map((item, i) => (
               <div
                 key={i}

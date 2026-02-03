@@ -1,3 +1,4 @@
+import NearbyAttractions from "@/components/NearbyAttractions";
 import Image from "next/image";
 
 export const metadata = {
@@ -54,17 +55,42 @@ export default function FamilySuitePage() {
               the Family Suite ensures a relaxed and enjoyable stay for
               every member of the family.
             </p>
+            {/* KEY FEATURES */}
+            <div className="mt-10">
+              <h3 className="text-xl font-light tracking-wide text-[#2b2118]">
+                Key Features of the Family Suite Room
+              </h3>
+
+              <ul className="mt-6 space-y-3 text-gray-600 leading-relaxed list-disc list-inside">
+                <li>Spacious suite ideal for families and small groups</li>
+                <li>Multiple comfortable beds with premium bedding</li>
+                <li>Air-conditioned room with geyser and 24/7 hot water</li>
+                <li>High-speed Wi-Fi, flat-screen TV, and modern amenities</li>
+                <li>Ample storage space and comfortable seating area</li>
+                <li>24×7 room service and daily housekeeping</li>
+              </ul>
+            </div>
+
+            <NearbyAttractions />
           </div>
 
           {/* RIGHT – FEATURES */}
           <div className="grid grid-cols-2 gap-6">
             {[
-              "Large suite with multiple beds",
-              "Ideal for families & groups",
-              "Air-conditioned comfort",
-              "Spacious modern bathroom",
-              "Ample storage & seating",
-              "Complimentary high-speed Wi-Fi",
+              // "Large suite with multiple beds",
+              // "Ideal for families & groups",
+              // "Air-conditioned comfort",
+              // "Spacious modern bathroom",
+              // "Ample storage & seating",
+              // "Complimentary high-speed Wi-Fi",
+              "Spacious suite with multiple beds",
+              "Ideal for families & group stays",
+              "Air-conditioned comfort with geyser",
+              "High-speed Wi-Fi & flat-screen TV",
+              "Spacious modern attached bathroom",
+              "Comfortable seating & storage space",
+              "24×7 room service & housekeeping",
+              "On-site parking space for up to 15 cars",
             ].map((item, i) => (
               <div
                 key={i}

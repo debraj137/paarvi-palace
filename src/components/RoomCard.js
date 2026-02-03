@@ -6,11 +6,16 @@ export default function RoomCard({ title, price, description, image, slug }) {
 
       {/* Image */}
       <div className="relative h-[220px] md:h-[260px] lg:h-[300px] overflow-hidden rounded-xl">
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-[1.04]"
-          style={{ backgroundImage: `url(${image})` }}
-        />
+        <Link
+          href={slug}
+          className="hover:text-[#c9a24d] transition cursor-pointer">
+          <div
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-[1.04]"
+            style={{ backgroundImage: `url(${image})` }} 
+          />
         <div className="absolute inset-0 bg-black/25"></div>
+        </Link>
+
       </div>
 
       {/* Content */}
@@ -18,7 +23,11 @@ export default function RoomCard({ title, price, description, image, slug }) {
 
         {/* Title */}
         <h3 className="text-xl md:text-2xl font-light tracking-wide text-[#2b2118]">
-          {title}
+          <Link
+            href={slug}
+            className="hover:text-[#c9a24d] transition">
+            {title}
+          </Link>
         </h3>
 
         {/* Price */}

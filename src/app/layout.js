@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://paarvipalace.com"),
+  metadataBase: new URL("https://www.paarvipalace.com"),
 
   title: "Paarvi Palace | Homestay Near Ram Mandir Ayodhya",
   description:

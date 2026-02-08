@@ -12,7 +12,7 @@ export default function ContactSection() {
                         Get in Touch
                     </span>
 
-                    <h2 className="mt-4 text-4xl font-light tracking-wide">
+                    <h2 className="mt-4 text-4xl font-light tracking-wide text-[#2b2118]">
                         Contact Paarvi Palace
                     </h2>
 
@@ -79,7 +79,7 @@ export default function ContactSection() {
                 <div className="mt-20 text-center">
                     <a
                         href="tel:+9192505 38645"
-                        className="inline-block text-sm tracking-widest uppercase border-b border-gray-800 pb-1 hover:border-[#c9a24d] hover:text-[#c9a24d] transition"
+                        className="inline-block text-sm tracking-widest uppercase border-b border-gray-800 pb-1 hover:border-[#c9a24d] hover:text-[#c9a24d] transition text-[#2b2118]"
                     >
                         Call to Book Your Stay
                     </a>

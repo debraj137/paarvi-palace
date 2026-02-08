@@ -11,7 +11,7 @@ export default function RoomsSection() {
             Our Accommodations
           </span>
 
-          <h2 className="mt-4 text-3xl md:text-4xl font-light tracking-wide">
+          <h2 className="mt-4 text-3xl md:text-4xl font-light tracking-wide text-[#2b2118]">
             Rooms & Suites
           </h2>
 

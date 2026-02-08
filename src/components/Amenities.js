@@ -27,7 +27,7 @@ export default function Amenities() {
             Thoughtful Comfort
           </span>
 
-          <h2 className="mt-4 text-4xl font-light tracking-wide">
+          <h2 className="mt-4 text-4xl font-light tracking-wide text-[#2b2118]">
             Amenities & Services
           </h2>
 

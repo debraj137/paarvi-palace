@@ -67,16 +67,17 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Hotel",
-              "@id": "https://paarvipalace.com/#hotel",
+              "@id": "https://www.paarvipalace.com/#hotel",
               "name": "Hotel Paarvi Palace",
-              "url": "https://paarvipalace.com/",
-              "logo": "https://paarvipalace.com/logo/logo.png",
+              "url": "https://www.paarvipalace.com/",
+              "logo": "https://www.paarvipalace.com/logo/logo.png",
               "image": [
-                "https://paarvipalace.com/images/rooms/deluxe/1.jpeg",
-                "https://paarvipalace.com/images/rooms/executive/1.jpeg",
-                "https://paarvipalace.com/images/rooms/family-suite/1.jpeg"
+                "https://www.paarvipalace.com/images/rooms/deluxe/1.jpeg",
+                "https://www.paarvipalace.com/images/rooms/executive/1.jpeg",
+                "https://www.paarvipalace.com/images/rooms/family-suite/1.jpeg"
               ],
               "telephone": "+91-9250538645",
+              "priceRange": "₹₹",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Bhiki Ka Purva, Ashapur Village, Darshan Nagar, Ranopali",
@@ -93,10 +94,13 @@ export default function RootLayout({ children }) {
               "description": "Hotel Paarvi Palace is a peaceful and comfortable hotel near Ram Mandir in Ayodhya, offering Deluxe Rooms, Executive Rooms, and Family Suites for pilgrims, families, and business travellers.",
               "amenityFeature": [
                 { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Breakfast Available", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Mobility Accessible", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Air Conditioning in Some Rooms", "value": true },
+                { "@type": "LocationFeatureSpecification", "name": "Kitchen in Some Rooms", "value": true },
                 { "@type": "LocationFeatureSpecification", "name": "Room Service", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Family Friendly", "value": true },
-                { "@type": "LocationFeatureSpecification", "name": "Private Parking", "value": true }
+                { "@type": "LocationFeatureSpecification", "name": "Family Friendly", "value": true }
               ],
               "sameAs": [
                 "https://maps.app.goo.gl/wGNYsZE37rkqdy11A"
@@ -104,6 +108,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+
 
 
         {children}

@@ -122,6 +122,9 @@ export default function FamilySuitePage() {
               "/images/rooms/family-suite/1.jpeg",
               "/images/rooms/family-suite/2.jpeg",
               "/images/rooms/family-suite/3.jpeg",
+              "/images/rooms/family-suite/4.jpeg",
+              "/images/rooms/family-suite/5.jpeg",
+              "/images/rooms/family-suite/6.jpeg",
             ].map((src, index) => (
               <div
                 key={index}

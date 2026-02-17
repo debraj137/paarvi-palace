@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-export default function RoomCard({ title, price, description, image, slug }) {
+export default function RoomCard({ title, originalPrice, discountPercent, description, image, slug }) {
+  const discountedPrice = Math.round(
+    originalPrice - (originalPrice * discountPercent) / 100
+  );
+
+  const savings = originalPrice - discountedPrice;
   return (
     <article className="group">
 
@@ -11,10 +16,14 @@ export default function RoomCard({ title, price, description, image, slug }) {
           className="hover:text-[#c9a24d] transition cursor-pointer">
           <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-[1.04]"
-            style={{ backgroundImage: `url(${image})` }} 
+            style={{ backgroundImage: `url(${image})` }}
           />
-        <div className="absolute inset-0 bg-black/25"></div>
+          <div className="absolute inset-0 bg-black/25"></div>
         </Link>
+        {/* Discount Badge */}
+        <div className="absolute top-4 left-4 z-20 bg-[#c9a24d] text-white text-xs px-3 py-1 rounded-full font-semibold shadow-md">
+          {discountPercent}% OFF
+        </div>
 
       </div>
 
@@ -31,9 +40,22 @@ export default function RoomCard({ title, price, description, image, slug }) {
         </h3>
 
         {/* Price */}
-        <p className="mt-2 text-sm text-gray-700">
-          Starting from <span className="font-medium">{price}</span>
-        </p>
+        <div className="mt-3">
+
+          <p className="text-sm text-gray-500 line-through">
+            ₹{originalPrice} / night
+          </p>
+
+          <p className="text-lg font-semibold text-[#2b2118]">
+            ₹{discountedPrice} / night
+          </p>
+
+          <p className="text-xs text-green-600 font-medium">
+            You save ₹{savings}
+          </p>
+
+        </div>
+
 
         {/* Description */}
         <p className="mt-4 text-gray-600 leading-relaxed md:whitespace-nowrap">

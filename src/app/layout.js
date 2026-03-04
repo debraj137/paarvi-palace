@@ -91,8 +91,13 @@ export default function RootLayout({ children }) {
         </Script>
 
         <noscript>
-          <img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1241403251416000&ev=PageView&noscript=1" />
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1241403251416000&ev=PageView&noscript=1"
+            alt=""
+          />
         </noscript>
         <Navbar />
         <script

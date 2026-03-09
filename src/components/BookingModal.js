@@ -1,7 +1,7 @@
 "use client";
 import emailjs from "emailjs-com";
 import { useState } from "react";
-
+import { rooms, getDiscountedPrice } from "@/data/roomPrices";
 export default function BookingModal({ isOpen, onClose }) {
 
     const [form, setForm] = useState({
@@ -62,6 +62,22 @@ export default function BookingModal({ isOpen, onClose }) {
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
+
+    const roomData = rooms[form.roomType];
+
+    const discountedPrice = roomData
+        ? getDiscountedPrice(roomData.originalPrice, roomData.discountPercent)
+        : 0;
+
+    const nights =
+        form.checkIn && form.checkOut
+            ? Math.ceil(
+                (new Date(form.checkOut) - new Date(form.checkIn)) /
+                (1000 * 60 * 60 * 24)
+            )
+            : 0;
+
+    const totalPrice = discountedPrice * nights;
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -189,6 +205,21 @@ Children: ${form.children}
                                 <option>Family Suite</option>
                             </select>
                         </div>
+                        {form.roomType && (
+                            <div className="bg-[#f3ede6] border border-[#e5ddd3] rounded-md px-4 py-3 text-sm text-[#2b2118]">
+
+                                <p>
+                                    Room Price: ₹{discountedPrice} / night
+                                </p>
+
+                                {nights > 0 && (
+                                    <p className="mt-1 font-medium">
+                                        Total ({nights} night{nights > 1 ? "s" : ""}): ₹{totalPrice}
+                                    </p>
+                                )}
+
+                            </div>
+                        )}
 
                         {/* Guest Name */}
                         <div>

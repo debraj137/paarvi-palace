@@ -1,77 +1,87 @@
 import Link from "next/link";
 
-export default function RoomCard({ title, originalPrice, discountPercent, description, image, slug }) {
-  const discountedPrice = Math.round(
-    originalPrice - (originalPrice * discountPercent) / 100
-  );
+const roomTypes = [
+  { key: "nonAc", label: "Non-AC" },
+  { key: "ac", label: "AC" },
+];
 
-  const savings = originalPrice - discountedPrice;
+export default function RoomCard({
+  title,
+  pricing,
+  description,
+  image,
+  slug,
+}) {
+  const maxDiscount =
+    Math.max(...roomTypes.map(({ key }) => pricing[key].discountPercent)) || 0;
+
   return (
     <article className="group">
-
-      {/* Image */}
-      <div className="relative h-[220px] md:h-[260px] lg:h-[300px] overflow-hidden rounded-xl">
+      <div className="relative h-[220px] overflow-hidden rounded-xl md:h-[260px] lg:h-[300px]">
         <Link
           href={slug}
-          className="hover:text-[#c9a24d] transition cursor-pointer">
+          className="cursor-pointer transition hover:text-[#c9a24d]"
+        >
           <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-[1.04]"
             style={{ backgroundImage: `url(${image})` }}
           />
-          <div className="absolute inset-0 bg-black/25"></div>
+          <div className="absolute inset-0 bg-black/25" />
         </Link>
-        {/* Discount Badge */}
-        <div className="absolute top-4 left-4 z-20 bg-[#c9a24d] text-white text-xs px-3 py-1 rounded-full font-semibold shadow-md">
-          {discountPercent}% OFF
-        </div>
 
+        <div className="absolute left-4 top-4 z-20 rounded-full bg-[#c9a24d] px-3 py-1 text-xs font-semibold text-white shadow-md">
+          Up to {maxDiscount}% OFF
+        </div>
       </div>
 
-      {/* Content */}
       <div className="mt-6 md:mt-8">
-
-        {/* Title */}
-        <h3 className="text-xl md:text-2xl font-light tracking-wide text-[#2b2118]">
-          <Link
-            href={slug}
-            className="hover:text-[#c9a24d] transition">
+        <h3 className="text-xl font-light tracking-wide text-[#2b2118] md:text-2xl">
+          <Link href={slug} className="transition hover:text-[#c9a24d]">
             {title}
           </Link>
         </h3>
 
-        {/* Price */}
-        <div className="mt-3">
+        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+          {roomTypes.map(({ key, label }) => {
+            const roomPrice = pricing[key];
+            const savings = roomPrice.originalPrice - roomPrice.discountedPrice;
 
-          <p className="text-sm text-gray-500 line-through">
-            ₹{originalPrice} / night
-          </p>
+            return (
+              <div
+                key={key}
+                className="rounded-xl border border-[#e5ddd3] bg-[#faf9f7] px-4 py-4"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8b7a5e]">
+                  {label}
+                </p>
 
-          <p className="text-lg font-semibold text-[#2b2118]">
-            ₹{discountedPrice} / night
-          </p>
+                <p className="mt-2 text-sm text-gray-500 line-through">
+                  ₹{roomPrice.originalPrice} / night
+                </p>
 
-          <p className="text-xs text-green-600 font-medium">
-            You save ₹{savings}
-          </p>
+                <p className="text-lg font-semibold text-[#2b2118]">
+                  ₹{roomPrice.discountedPrice} / night
+                </p>
 
+                <p className="text-xs font-medium text-green-600">
+                  You save ₹{savings}
+                </p>
+              </div>
+            );
+          })}
         </div>
 
-
-        {/* Description */}
-        <p className="mt-4 text-gray-600 leading-relaxed md:whitespace-nowrap">
+        <p className="mt-4 leading-relaxed text-gray-600 md:whitespace-nowrap">
           {description}
         </p>
 
-        {/* CTA */}
         <Link
           href={slug}
-          className="inline-block mt-6 text-sm tracking-widest uppercase text-[#2b2118] border-b border-[#2b2118] pb-1 hover:border-[#c9a24d] hover:text-[#c9a24d] transition"
+          className="mt-6 inline-block border-b border-[#2b2118] pb-1 text-sm uppercase tracking-widest text-[#2b2118] transition hover:border-[#c9a24d] hover:text-[#c9a24d]"
         >
           View Room
         </Link>
-
       </div>
-
     </article>
   );
 }

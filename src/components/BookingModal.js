@@ -164,6 +164,7 @@ Children: ${form.children}
 `;
 
     window.open(
+      // `https://wa.me/918123417647?text=${encodeURIComponent(message)}`,
       `https://wa.me/918123417647?text=${encodeURIComponent(message)}`,
       "_blank"
     );

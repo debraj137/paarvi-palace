@@ -1,5 +1,20 @@
 import Link from "next/link";
 
+const budgetLinks = [
+    {
+        href: "/deluxe-room-in-ayodhya",
+        label: "Hotel in Rs 501-1000",
+    },
+    {
+        href: "/executive-room-in-ayodhya",
+        label: "Hotel in Rs 1000-1250",
+    },
+    {
+        href: "/family-suite-room-in-ayodhya",
+        label: "Hotel in Rs 1250-1500",
+    },
+];
+
 export default function Footer() {
     return (
         <footer className="bg-[#2b2118] text-[#e6dccf]">
@@ -79,6 +94,16 @@ export default function Footer() {
                                     Contact
                                 </Link>
                             </li>
+                            {budgetLinks.map((link) => (
+                                <li key={link.href}>
+                                    <Link
+                                        href={link.href}
+                                        className="text-[#e6dccf] hover:text-[#c9a24d] transition"
+                                    >
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 

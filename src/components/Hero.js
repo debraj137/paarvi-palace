@@ -9,19 +9,21 @@ export default function Hero() {
     return (
         <>
             <section
-                className="relative min-h-[85svh] overflow-hidden md:h-[85vh]"
+                className="relative isolate min-h-[85svh] overflow-hidden bg-black md:h-[85vh]"
             >
-                <Image
-                    src="/images/hero.jpg"
-                    alt="Paarvi Palace in Ayodhya"
-                    fill
-                    priority
-                    sizes="100vw"
-                    className="object-cover object-center"
-                />
+                <div className="absolute inset-0 transform-gpu [will-change:transform]">
+                    <Image
+                        src="/images/hero.jpg"
+                        alt="Paarvi Palace in Ayodhya"
+                        fill
+                        priority
+                        sizes="100vw"
+                        className="object-cover object-center"
+                    />
+                </div>
 
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-black/45 md:bg-gradient-to-r md:from-black/70 md:via-black/40 md:to-transparent"></div>
 
                 {/* Content */}
                 <div className="relative z-10 mx-auto flex min-h-[85svh] max-w-7xl items-center px-6 md:h-full">

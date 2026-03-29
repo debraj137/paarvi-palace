@@ -3,6 +3,7 @@ import ContactSection from "@/components/ContactSection";
 import Hero from "@/components/Hero";
 import RoomsSection from "@/components/RoomsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export const metadata = {
   title: "Hotels in Ayodhya | Paarvi Palace Near Ram Mandir",
@@ -30,6 +31,7 @@ export default function Home() {
       <Hero />
       <Amenities />
       <RoomsSection />
+      <WhyChooseUs />
       <TestimonialsSection />
       <ContactSection />
     </>

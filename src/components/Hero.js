@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import BookingModal from "./BookingModal";
@@ -8,14 +9,22 @@ export default function Hero() {
     return (
         <>
             <section
-                className="relative min-h-[85svh] md:h-[85vh] bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/hero.jpg')" }}
+                className="relative min-h-[85svh] overflow-hidden md:h-[85vh]"
             >
+                <Image
+                    src="/images/hero.jpg"
+                    alt="Paarvi Palace in Ayodhya"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover object-center"
+                />
+
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
 
                 {/* Content */}
-                <div className="relative z-10 max-w-7xl mx-auto h-full flex items-center px-6">
+                <div className="relative z-10 mx-auto flex min-h-[85svh] max-w-7xl items-center px-6 md:h-full">
                     <div className="max-w-xl">
                         <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                             Welcome to <br /> Paarvi Palace

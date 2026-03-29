@@ -8,7 +8,7 @@ export default function Hero() {
     return (
         <>
             <section
-                className="relative h-[85vh] bg-cover bg-center"
+                className="relative min-h-[85svh] md:h-[85vh] bg-cover bg-center"
                 style={{ backgroundImage: "url('/images/hero.jpg')" }}
             >
                 {/* Gradient overlay */}

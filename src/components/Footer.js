@@ -104,6 +104,22 @@ export default function Footer() {
                                     </Link>
                                 </li>
                             ))}
+                            <li>
+                                <Link
+                                    href="/executive-room-in-ayodhya"
+                                    className="text-[#e6dccf] hover:text-[#c9a24d] transition"
+                                >
+                                    Couple Friendly Hotel
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href="/rooms"
+                                    className="text-[#e6dccf] hover:text-[#c9a24d] transition"
+                                >
+                                    Luxury Hotel
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 

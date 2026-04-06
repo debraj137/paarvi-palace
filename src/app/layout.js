@@ -24,7 +24,7 @@ export const metadata = {
     "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive, Family Suite (2 beds), Family Suite (3 beds), and Family Suite (4 beds) rooms for solo travellers, couples, families, and pilgrims seeking a comfortable stay.",
   keywords: [
     "hotels in ayodhya",
-    "hotels rs 501 to rs 1000 in ayodhya",
+    "hotels rs 500 to rs 1000 in ayodhya",
     "hotels rs 1001 to rs 2000 in ayodhya",
     "couple friendly hotels in ayodhya",
     "hotels with parking in ayodhya",
@@ -40,7 +40,7 @@ export const metadata = {
     title: "Paarvi Palace | Luxury Homestay Near Ram Mandir Ayodhya",
     description:
       "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive, Family Suite (2 beds), Family Suite (3 beds), and Family Suite (4 beds) rooms for pilgrims, families and travellers.",
-    url: "https://paarvipalace.com",
+    url: "https://www.paarvipalace.com",
     siteName: "Paarvi Palace",
     images: [
       {

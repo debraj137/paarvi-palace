@@ -2,15 +2,15 @@ import Link from "next/link";
 
 const budgetLinks = [
     {
-        href: "/deluxe-room-in-ayodhya",
-        label: "Hotel in Rs 501-1000",
+        href: "/hotel-in-Rs-500-1000",
+        label: "Hotel in Rs 500-1000",
     },
     {
-        href: "/executive-room-in-ayodhya",
+        href: "/hotel-in-Rs-1000-1250",
         label: "Hotel in Rs 1000-1250",
     },
     {
-        href: "/family-suite-room-in-ayodhya",
+        href: "/hotel-in-Rs-1250-1500",
         label: "Hotel in Rs 1250-1500",
     },
 ];

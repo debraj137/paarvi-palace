@@ -29,6 +29,26 @@ export const rooms = {
       discountPercent: 50,
     },
   },
+  "Family Suite (3 beds)": {
+    nonAc: {
+      originalPrice: 3000,
+      discountPercent: 50,
+    },
+    ac: {
+      originalPrice: 4000,
+      discountPercent: 50,
+    },
+  },
+  "Family Suite (4 beds)": {
+    nonAc: {
+      originalPrice: 5000,
+      discountPercent: 50,
+    },
+    ac: {
+      originalPrice: 6000,
+      discountPercent: 50,
+    },
+  },
 };
 
 export const getDiscountedPrice = (originalPrice, discountPercent) => {

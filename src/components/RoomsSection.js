@@ -17,8 +17,20 @@ const roomContent = [
   {
     title: "Family Suite (2 beds)",
     description: "Perfect for families, offering space and privacy.",
-    image: "/images/rooms/family.jpeg",
+    image: "/images/rooms/family-suite(2-bed)/1.jpeg",
     slug: "/family-suite-room-in-ayodhya",
+  },
+  {
+    title: "Family Suite (3 beds)",
+    description: "Ideal for larger families with extra sleeping space and comfort.",
+    image: "/images/rooms/family-suite(3-bed)/1.jpeg",
+    slug: "/family-suite-3-beds-in-ayodhya",
+  },
+  {
+    title: "Family Suite (4 beds)",
+    description: "Best for bigger groups seeking a spacious and convenient stay.",
+    image: "/images/rooms/family-suite(4-bed)/1.jpeg",
+    slug: "/family-suite-4-beds-in-ayodhya",
   },
 ];
 

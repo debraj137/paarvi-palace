@@ -4,7 +4,13 @@ import emailjs from "emailjs-com";
 import { useState } from "react";
 import { getRoomPricing, rooms } from "@/data/roomPrices";
 
-const roomTypeOptions = ["Deluxe Room", "Executive Room", "Family Suite (2 beds)"];
+const roomTypeOptions = [
+  "Deluxe Room",
+  "Executive Room",
+  "Family Suite (2 beds)",
+  "Family Suite (3 beds)",
+  "Family Suite (4 beds)",
+];
 
 export default function BookingModal({ isOpen, onClose }) {
   const [form, setForm] = useState({

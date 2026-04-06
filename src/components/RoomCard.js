@@ -24,7 +24,7 @@ export default function RoomCard({
         >
           <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out group-hover:scale-[1.04]"
-            style={{ backgroundImage: `url(${image})` }}
+            style={{ backgroundImage: `url("${encodeURI(image)}")` }}
           />
           <div className="absolute inset-0 bg-black/25" />
         </Link>

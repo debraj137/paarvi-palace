@@ -21,7 +21,7 @@ export const metadata = {
 
   title: "Paarvi Palace | Homestay Near Ram Mandir Ayodhya",
   description:
-    "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive and Family Suite (2 beds) rooms for solo travellers, couples, families, and pilgrims seeking a comfortable stay.",
+    "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive, Family Suite (2 beds), Family Suite (3 beds), and Family Suite (4 beds) rooms for solo travellers, couples, families, and pilgrims seeking a comfortable stay.",
   keywords: [
     "hotels in ayodhya",
     "hotels rs 501 to rs 1000 in ayodhya",
@@ -39,7 +39,7 @@ export const metadata = {
   openGraph: {
     title: "Paarvi Palace | Luxury Homestay Near Ram Mandir Ayodhya",
     description:
-      "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive and Family Suite (2 beds) rooms for pilgrims, families and travellers.",
+      "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive, Family Suite (2 beds), Family Suite (3 beds), and Family Suite (4 beds) rooms for pilgrims, families and travellers.",
     url: "https://paarvipalace.com",
     siteName: "Paarvi Palace",
     images: [
@@ -58,7 +58,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Paarvi Palace | Luxury Homestay Near Ram Mandir Ayodhya",
     description:
-      "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive and Family Suite (2 beds) rooms for pilgrims, families and travellers.",
+      "Paarvi Palace is a peaceful luxury homestay near Ram Mandir, Ayodhya offering Deluxe, Executive, Family Suite (2 beds), Family Suite (3 beds), and Family Suite (4 beds) rooms for pilgrims, families and travellers.",
     images: ["/og-image.png"],
   },
 };
@@ -146,7 +146,9 @@ export default function RootLayout({ children }) {
               "image": [
                 "https://www.paarvipalace.com/images/rooms/deluxe/1.jpeg",
                 "https://www.paarvipalace.com/images/rooms/executive/1.jpeg",
-                "https://www.paarvipalace.com/images/rooms/family-suite/1.jpeg"
+                "https://www.paarvipalace.com/images/rooms/family-suite(2-bed)/1.jpeg",
+                "https://www.paarvipalace.com/images/rooms/family-suite(3-bed)/1.jpeg",
+                "https://www.paarvipalace.com/images/rooms/family-suite(4-bed)/1.jpeg"
               ],
               "telephone": "+91-9250538645",
               "priceRange": "₹₹",
@@ -163,7 +165,7 @@ export default function RootLayout({ children }) {
                 "latitude": 26.7689284,
                 "longitude": 82.1896528
               },
-              "description": "Hotel Paarvi Palace is a peaceful and comfortable hotel near Ram Mandir in Ayodhya, offering Deluxe Rooms, Executive Rooms, and Family Suite (2 beds) rooms for pilgrims, families, and business travellers.",
+              "description": "Hotel Paarvi Palace is a peaceful and comfortable hotel near Ram Mandir in Ayodhya, offering Deluxe Rooms, Executive Rooms, Family Suite (2 beds), Family Suite (3 beds), and Family Suite (4 beds) for pilgrims, families, and business travellers.",
               "amenityFeature": [
                 { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
                 { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },

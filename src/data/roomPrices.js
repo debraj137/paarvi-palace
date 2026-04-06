@@ -19,7 +19,7 @@ export const rooms = {
       discountPercent: 50,
     },
   },
-  "Family Suite": {
+  "Family Suite (2 beds)": {
     nonAc: {
       originalPrice: 2499,
       discountPercent: 50,

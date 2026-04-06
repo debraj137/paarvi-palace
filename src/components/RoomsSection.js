@@ -15,7 +15,7 @@ const roomContent = [
     slug: "/executive-room-in-ayodhya",
   },
   {
-    title: "Family Suite",
+    title: "Family Suite (2 beds)",
     description: "Perfect for families, offering space and privacy.",
     image: "/images/rooms/family.jpeg",
     slug: "/family-suite-room-in-ayodhya",

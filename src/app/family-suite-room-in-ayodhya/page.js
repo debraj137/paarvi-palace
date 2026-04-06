@@ -2,9 +2,9 @@ import NearbyAttractions from "@/components/NearbyAttractions";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Family Suite Room in Ayodhya | Paarvi Palace Near Ram Mandir",
+  title: "Family Suite (2 beds) in Ayodhya | Paarvi Palace Near Ram Mandir",
   description:
-    "Stay in a spacious Family Suite Room at Paarvi Palace, Ayodhya. Ideal for families and groups seeking comfort, space, and proximity to Ram Mandir.",
+    "Stay in a spacious Family Suite (2 beds) at Paarvi Palace, Ayodhya. Ideal for families and groups seeking comfort, space, and proximity to Ram Mandir.",
 };
 
 export default function FamilySuitePage() {
@@ -20,7 +20,7 @@ export default function FamilySuitePage() {
           </span>
 
           <h1 className="mt-6 text-4xl md:text-5xl font-light tracking-wide text-[#2b2118]">
-            Family Suite Room
+            Family Suite (2 beds)
           </h1>
 
           <div className="mx-auto mt-6 w-20 h-[1px] bg-[#c9a24d]" />
@@ -45,20 +45,20 @@ export default function FamilySuitePage() {
             </h2>
 
             <p className="mt-6 text-gray-600 leading-relaxed">
-              Our Family Suite Rooms at Paarvi Palace are thoughtfully planned
+              Our Family Suite (2 beds) rooms at Paarvi Palace are thoughtfully planned
               to accommodate families and small groups who value space and
               comfort during their stay in Ayodhya.
             </p>
 
             <p className="mt-6 text-gray-600 leading-relaxed">
               With multiple beds, a spacious layout, and modern amenities,
-              the Family Suite ensures a relaxed and enjoyable stay for
+              the Family Suite (2 beds) ensures a relaxed and enjoyable stay for
               every member of the family.
             </p>
             {/* KEY FEATURES */}
             <div className="mt-10">
               <h3 className="text-xl font-light tracking-wide text-[#2b2118]">
-                Key Features of the Family Suite Room
+                Key Features of the Family Suite (2 beds)
               </h3>
 
               <ul className="mt-6 space-y-3 text-gray-600 leading-relaxed list-disc list-inside">
@@ -109,7 +109,7 @@ export default function FamilySuitePage() {
         <div className="mt-28">
 
           <h2 className="text-3xl font-light tracking-wide text-[#2b2118] text-center">
-            Inside the Family Suite
+            Inside the Family Suite (2 beds)
           </h2>
 
           <p className="mt-4 text-center text-gray-600 max-w-2xl mx-auto">
@@ -119,12 +119,13 @@ export default function FamilySuitePage() {
 
           <div className="mt-14 grid md:grid-cols-3 gap-8">
             {[
-              "/images/rooms/family-suite/1.jpeg",
-              "/images/rooms/family-suite/2.jpeg",
-              "/images/rooms/family-suite/3.jpeg",
-              "/images/rooms/family-suite/4.jpeg",
-              "/images/rooms/family-suite/5.jpeg",
-              "/images/rooms/family-suite/6.jpeg",
+              "/images/rooms/family-suite(2-bed)/1.jpeg",
+              "/images/rooms/family-suite(2-bed)/2.jpeg",
+              "/images/rooms/family-suite(2-bed)/3.jpeg",
+              "/images/rooms/family-suite(2-bed)/4.jpeg",
+              "/images/rooms/family-suite(2-bed)/5.jpeg",
+              "/images/rooms/family-suite(2-bed)/6.jpeg",
+              "/images/rooms/family-suite(2-bed)/7.jpeg",
             ].map((src, index) => (
               <div
                 key={index}
@@ -132,7 +133,7 @@ export default function FamilySuitePage() {
               >
                 <Image
                   src={src}
-                  alt={`Family Suite image ${index + 1}`}
+                  alt={`Family Suite (2 beds) image ${index + 1}`}
                   fill
                   className="object-cover transition duration-700 hover:scale-105"
                 />

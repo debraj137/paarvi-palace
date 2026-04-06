@@ -100,12 +100,12 @@ export default function HotelInRs1250To1500Page() {
 
           <div className="mt-14 grid md:grid-cols-3 gap-8">
             {[
-              "/images/rooms/family-suite/1.jpeg",
-              "/images/rooms/family-suite/2.jpeg",
-              "/images/rooms/family-suite/3.jpeg",
-              "/images/rooms/family-suite/4.jpeg",
-              "/images/rooms/family-suite/5.jpeg",
-              "/images/rooms/family-suite/6.jpeg",
+              "/images/rooms/family-suite(2-bed)/1.jpeg",
+              "/images/rooms/family-suite(2-bed)/2.jpeg",
+              "/images/rooms/family-suite(2-bed)/3.jpeg",
+              "/images/rooms/family-suite(2-bed)/4.jpeg",
+              "/images/rooms/family-suite(2-bed)/5.jpeg",
+              "/images/rooms/family-suite(2-bed)/6.jpeg",
             ].map((src, index) => (
               <div
                 key={index}

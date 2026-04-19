@@ -104,6 +104,13 @@ export default function HotelInRs500To1000Page() {
               "/images/rooms/deluxe/1.jpeg",
               "/images/rooms/deluxe/2.jpeg",
               "/images/rooms/deluxe/3.jpeg",
+              "/images/rooms/deluxe/4.jpeg",
+              "/images/rooms/deluxe/5.jpeg",
+              "/images/rooms/deluxe/6.jpeg",
+              "/images/rooms/deluxe/7.jpeg",
+              "/images/rooms/deluxe/8.jpeg",
+              "/images/rooms/deluxe/9.jpeg",
+              "/images/rooms/deluxe/10.jpeg",
             ].map((src, index) => (
               <div
                 key={index}

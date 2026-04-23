@@ -126,6 +126,11 @@ export default function FamilySuitePage() {
               "/images/rooms/family-suite(2-bed)/5.jpeg",
               "/images/rooms/family-suite(2-bed)/6.jpeg",
               "/images/rooms/family-suite(2-bed)/7.jpeg",
+              "/images/rooms/family-suite(2-bed)/8.jpeg",
+              "/images/rooms/family-suite(2-bed)/9.jpeg",
+              "/images/rooms/family-suite(2-bed)/10.jpeg",
+              "/images/rooms/family-suite(2-bed)/11.jpeg",
+              "/images/rooms/family-suite(2-bed)/12.jpeg",
             ].map((src, index) => (
               <div
                 key={index}

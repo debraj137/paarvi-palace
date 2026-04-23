@@ -121,6 +121,13 @@ export default function ExecutiveRoomPage() {
               "/images/rooms/executive/1.jpeg",
               "/images/rooms/executive/2.jpeg",
               "/images/rooms/executive/3.jpeg",
+              "/images/rooms/executive/4.jpeg",
+              "/images/rooms/executive/5.jpeg",
+              "/images/rooms/executive/6.jpeg",
+              "/images/rooms/executive/7.jpeg",
+              "/images/rooms/executive/8.jpeg",
+              "/images/rooms/executive/9.jpeg",
+              "/images/rooms/executive/10.jpeg"
             ].map((src, index) => (
               <div
                 key={index}

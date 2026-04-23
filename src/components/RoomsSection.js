@@ -5,19 +5,19 @@ const roomContent = [
   {
     title: "Deluxe Room",
     description: "Ideal for solo travellers and couples seeking comfort.",
-    image: "/images/rooms/deluxe.jpeg",
+    image: "/images/rooms/deluxe/7.jpeg",
     slug: "/deluxe-room-in-ayodhya",
   },
   {
     title: "Executive Room",
     description: "Spacious rooms with enhanced amenities for a relaxed stay.",
-    image: "/images/rooms/executive.jpeg",
+    image: "/images/rooms/executive/10.jpeg",
     slug: "/executive-room-in-ayodhya",
   },
   {
     title: "Family Suite (2 beds)",
     description: "Perfect for families, offering space and privacy.",
-    image: "/images/rooms/family-suite(2-bed)/1.jpeg",
+    image: "/images/rooms/family-suite(2-bed)/9.jpeg",
     slug: "/family-suite-room-in-ayodhya",
   },
   {

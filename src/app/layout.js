@@ -183,6 +183,8 @@ export default function RootLayout({ children }) {
           }}
         />
 
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="0QBlSfyPNAZwY6EoqGGAqA" async></script>
+
 
 
         {children}

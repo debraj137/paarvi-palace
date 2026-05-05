@@ -1,3 +1,5 @@
+import FaqSchema from "@/components/FaqSchema";
+import FaqSection from "@/components/FaqSection";
 import Link from "next/link";
 
 export const metadata = {
@@ -6,9 +8,33 @@ export const metadata = {
         "Get in touch with Paarvi Palace, a peaceful homestay near Ram Mandir, Ayodhya. Contact us for bookings, directions, or stay-related queries.",
 };
 
+const contactFaqs = [
+    {
+        question: "How can I contact Paarvi Palace for bookings?",
+        answer:
+            "You can contact Paarvi Palace by phone, WhatsApp, or email for booking help, stay questions, directions, and room availability updates.",
+    },
+    {
+        question: "What details should I share when I call for a booking?",
+        answer:
+            "It helps to share your check-in date, check-out date, number of guests, preferred room type, and any special requirements so the team can guide you quickly.",
+    },
+    {
+        question: "Can I get directions to Paarvi Palace before arrival?",
+        answer:
+            "Yes, guests can use the Google Maps link on the contact page or call the property directly for clearer route support before arriving in Ayodhya.",
+    },
+    {
+        question: "Is WhatsApp available for quick stay-related questions?",
+        answer:
+            "Yes, guests can use the listed phone number for quick contact and assistance with common booking and stay questions.",
+    },
+];
+
 export default function ContactPage() {
     return (
         <main>
+            <FaqSchema items={contactFaqs} />
 
             {/* Page Hero */}
             <section className="bg-[#faf9f7] py-28">
@@ -94,6 +120,13 @@ export default function ContactPage() {
 
                 </div>
             </section>
+
+            <FaqSection
+                eyebrow="Contact Help"
+                title="Frequently Asked Questions About Contacting Paarvi Palace"
+                intro="These are the common questions guests ask before calling, messaging, or requesting booking support."
+                items={contactFaqs}
+            />
 
             {/* Gentle CTA */}
             <section className="bg-[#faf9f7] py-24 text-center">

@@ -11,6 +11,8 @@ export const metadata = {
     "Discover Paarvi Palace, one of the comfortable hotels in Ayodhya with room options from Rs 501 to Rs 2000, private parking, selected kitchen access, and stays suitable for couples, families, and pilgrims.",
   keywords: [
     "hotels in ayodhya",
+    "Hotels in Ayodhya Book with Free Cancellation",
+    "hotels in ayodhya with free cancellation",
     "hotels rs 1001 to rs 2000",
     "hotels rs 501 to rs 1000",
     "couple friendly hotels",

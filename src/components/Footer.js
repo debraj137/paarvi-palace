@@ -120,6 +120,14 @@ export default function Footer() {
                                     Luxury Hotel
                                 </Link>
                             </li>
+                            <li>
+                                <Link
+                                    href="/hotels-in-ayodhya-book-with-free-cancellation"
+                                    className="text-[#e6dccf] hover:text-[#c9a24d] transition"
+                                >
+                                    Free Cancellation
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 

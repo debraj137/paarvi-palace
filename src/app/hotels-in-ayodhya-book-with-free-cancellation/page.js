@@ -19,7 +19,21 @@ export const metadata = {
     canonical: "/hotels-in-ayodhya-book-with-free-cancellation",
   },
   openGraph: {
-    url: "/hotels-in-ayodhya-book-with-free-cancellation",
+    title: "Hotels in Ayodhya | Book with Free Cancellation",
+    description:
+      "Looking for hotels in Ayodhya book with free cancellation? Stay at Paarvi Palace near Ram Mandir for a comfortable, flexible, and family-friendly experience.",
+    url: "https://www.paarvipalace.com/hotels-in-ayodhya-book-with-free-cancellation",
+    siteName: "Paarvi Palace",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Paarvi Palace in Ayodhya",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
   },
 };
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const metadata = {
   title:
-    "Hotels in Ayodhya Book with Free Cancellation | Paarvi Palace Near Ram Mandir",
+    "Hotels in Ayodhya | Book with Free Cancellation",
   description:
     "Looking for hotels in Ayodhya book with free cancellation? Stay at Paarvi Palace near Ram Mandir for a comfortable, flexible, and family-friendly experience.",
   keywords: [
@@ -17,6 +17,9 @@ export const metadata = {
   ],
   alternates: {
     canonical: "/hotels-in-ayodhya-book-with-free-cancellation",
+  },
+  openGraph: {
+    url: "/hotels-in-ayodhya-book-with-free-cancellation",
   },
 };
 

@@ -5,7 +5,7 @@ import RoomsSection from "@/components/RoomsSection";
 export const metadata = {
   title: "Rooms & Suites Near Ram Mandir Ayodhya | Paarvi Palace",
   description:
-    "Explore Deluxe Rooms, Executive Rooms, and Family Suite options with 2 beds, 3 beds, and 4 beds at Paarvi Palace in Ayodhya, with room options for couples, families, and groups.",
+    "Explore Deluxe, Executive, and Family Suite rooms with 2, 3, or 4 beds at Paarvi Palace in Ayodhya for couples, families, and groups.",
   keywords: [
     "rooms in ayodhya",
     "hotels rs 501 to rs 1000 in ayodhya",

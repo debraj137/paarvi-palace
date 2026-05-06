@@ -10,7 +10,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 export const metadata = {
   title: "Hotels in Ayodhya | Paarvi Palace Near Ram Mandir",
   description:
-    "Discover Paarvi Palace, one of the comfortable hotels in Ayodhya with room options from Rs 501 to Rs 2000, private parking, selected kitchen access, and stays suitable for couples, families, and pilgrims.",
+    "Discover Paarvi Palace in Ayodhya with rooms from Rs 501 to Rs 2000, parking, selected kitchen access, and stays for couples, families, and pilgrims.",
   keywords: [
     "hotels in ayodhya",
     "Hotels in Ayodhya Book with Free Cancellation",

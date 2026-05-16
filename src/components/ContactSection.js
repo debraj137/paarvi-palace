@@ -1,9 +1,11 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 
-export default function ContactSection() {
+export default function ContactSection({
+    className = "bg-white py-32",
+}) {
     return (
-        <section className="bg-white py-32">
+        <section className={className}>
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Section Header */}

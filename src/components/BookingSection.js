@@ -6,7 +6,10 @@ export default function BookingSection() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="bg-[#f7f4ef] border-t border-[#e5ddd3]">
+    <section
+      id="reserve-now"
+      className="bg-[#f7f4ef] border-t border-[#e5ddd3]"
+    >
       <div className="max-w-7xl mx-auto px-6 py-20 text-center">
 
         {/* Heading */}

@@ -1,155 +1,120 @@
-import NearbyAttractions from "@/components/NearbyAttractions";
-import Image from "next/image";
+import RoomLandingPage from "@/components/RoomLandingPage";
+
+const deluxeFaqs = [
+  {
+    question: "Who should choose the Deluxe Room at Paarvi Palace?",
+    answer:
+      "The Deluxe Room is ideal for solo travellers, couples, and guests who want a comfortable, practical stay near Ram Mandir without moving to a larger suite category.",
+  },
+  {
+    question: "Does the Deluxe Room offer AC and Non-AC options?",
+    answer:
+      "Yes. Guests can choose between AC and Non-AC Deluxe Room options depending on comfort preference, travel season, and budget.",
+  },
+  {
+    question: "What amenities are available in the Deluxe Room?",
+    answer:
+      "The Deluxe Room includes practical essentials such as Wi-Fi, a flat-screen TV, hot water, room service, housekeeping, and a comfortable bed setup for a relaxed Ayodhya stay.",
+  },
+  {
+    question: "How can I reserve the Deluxe Room?",
+    answer:
+      "Guests can call Paarvi Palace directly or use the booking form on the page to check dates, room choice, and reservation details before arrival.",
+  },
+];
+
+const deluxeRoomImages = [
+  "/images/rooms/deluxe/1.jpeg",
+  "/images/rooms/deluxe/2.jpeg",
+  "/images/rooms/deluxe/3.jpeg",
+  "/images/rooms/deluxe/4.jpeg",
+  "/images/rooms/deluxe/5.jpeg",
+  "/images/rooms/deluxe/6.jpeg",
+  "/images/rooms/deluxe/7.jpeg",
+  "/images/rooms/deluxe/8.jpeg",
+  "/images/rooms/deluxe/9.jpeg",
+  "/images/rooms/deluxe/10.jpeg",
+];
 
 export const metadata = {
   title: "Deluxe Room in Ayodhya | Paarvi Palace Near Ram Mandir",
   description:
-    "Stay in a comfortable Deluxe Room at Paarvi Palace, Ayodhya. Ideal for couples and solo travellers near Ram Mandir.",
+    "Stay in a comfortable Deluxe Room at Paarvi Palace, Ayodhya. AC and Non-AC options with Wi-Fi, hot water, and easy access to Ram Mandir.",
+  keywords: [
+    "deluxe room in ayodhya",
+    "deluxe room near ram mandir",
+    "paarvi palace deluxe room",
+    "budget room in ayodhya",
+    "comfortable hotel room in ayodhya",
+  ],
+  alternates: {
+    canonical: "/deluxe-room-in-ayodhya",
+  },
+  openGraph: {
+    title: "Deluxe Room in Ayodhya | Paarvi Palace Near Ram Mandir",
+    description:
+      "Explore the Deluxe Room at Paarvi Palace with comfortable interiors, AC and Non-AC pricing, and a peaceful stay near Ram Mandir.",
+    url: "https://www.paarvipalace.com/deluxe-room-in-ayodhya",
+    siteName: "Paarvi Palace",
+    images: [
+      {
+        url: "/images/rooms/deluxe/7.jpeg",
+        width: 1200,
+        height: 800,
+        alt: "Deluxe Room at Paarvi Palace in Ayodhya",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
 };
 
 export default function DeluxeRoomPage() {
   return (
-    <section className="bg-[#faf9f7]">
-
-      {/* ===== HERO (NO IMAGE · NO CTA) ===== */}
-      <div className="border-b border-[#e5ddd3]">
-        <div className="max-w-7xl mx-auto px-6 py-24 text-center">
-
-          <span className="uppercase tracking-[0.35em] text-xs text-[#8b7a5e]">
-            Paarvi Palace · Ayodhya
-          </span>
-
-          <h1 className="mt-6 text-4xl md:text-5xl font-light tracking-wide text-[#2b2118]">
-            Deluxe Room
-          </h1>
-
-          <div className="mx-auto mt-6 w-20 h-[1px] bg-[#c9a24d]" />
-
-          <p className="mt-8 max-w-2xl mx-auto text-gray-600 leading-relaxed">
-            A peaceful and thoughtfully designed room for solo travellers and
-            couples, offering comfort, calm, and proximity to Ram Mandir.
-          </p>
-
-        </div>
-      </div>
-
-      {/* ===== ROOM DETAILS ===== */}
-      <div className="max-w-7xl mx-auto px-6 py-24">
-
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-
-          {/* LEFT */}
-          <div>
-            <h2 className="text-3xl font-light tracking-wide text-[#2b2118]">
-              Thoughtfully Designed for Comfort
-            </h2>
-
-            <p className="mt-6 text-gray-600 leading-relaxed">
-              Our Deluxe Rooms at Paarvi Palace offer a calm and refined stay
-              experience. Carefully curated interiors, modern amenities, and
-              a peaceful ambience make it an ideal choice for guests visiting
-              Ayodhya.
-            </p>
-
-            <p className="mt-6 text-gray-600 leading-relaxed">
-              Whether you’re here for pilgrimage or leisure, the Deluxe Room
-              ensures rest, privacy, and convenience just minutes from
-              Ram Mandir.
-            </p>
-            {/* KEY FEATURES */}
-            <div className="mt-10">
-              <h3 className="text-xl font-light tracking-wide text-[#2b2118]">
-                Key Features of the Deluxe Room
-              </h3>
-
-              <ul className="mt-6 space-y-3 text-gray-600 leading-relaxed list-disc list-inside">
-                <li>Spacious interiors suitable for solo travellers, couples, and small families</li>
-                <li>One king-size bed with plush bedding for two guests</li>
-                <li>Air-conditioned room with geyser and 24/7 hot water</li>
-                <li>High-speed Wi-Fi, flat-screen TV, and modern amenities</li>
-                <li>Dedicated work desk ideal for business travellers</li>
-                <li>24×7 room service and daily housekeeping</li>
-              </ul>
-            </div>
-            <NearbyAttractions/>
-          </div>
-
-          {/* RIGHT – FEATURES */}
-          <div className="grid grid-cols-2 gap-6">
-            {[
-              // "King-size bed with premium linens",
-              // "Air-conditioned comfort",
-              // "Free high-speed Wi-Fi",
-              // "LED TV with channels",
-              // "Modern attached bathroom",
-              // "In-room dining & service",
-
-              "Spacious interiors designed for comfort",
-              "One king-size bed for two guests",
-              "Air-conditioned room with geyser",
-              "High-speed Wi-Fi & flat-screen TV",
-              "Modern attached bathroom with hot water",
-              "Dedicated work desk for business travellers",
-              "24×7 room service & housekeeping",
-              "On-site parking space for up to 15 cars",
-
-
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="border border-[#e5ddd3] rounded-xl p-6 bg-white/70"
-              >
-                <p className="text-sm tracking-wide text-[#2b2118]">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
-
-        </div>
-
-        {/* ===== GALLERY ===== */}
-        <div className="mt-28">
-
-          <h2 className="text-3xl font-light tracking-wide text-[#2b2118] text-center">
-            Inside the Deluxe Room
-          </h2>
-
-          <p className="mt-4 text-center text-gray-600 max-w-2xl mx-auto">
-            A glimpse into the elegance and comfort that awaits you at
-            Paarvi Palace.
-          </p>
-
-          <div className="mt-14 grid md:grid-cols-3 gap-8">
-            {[
-              "/images/rooms/deluxe/1.jpeg",
-              "/images/rooms/deluxe/2.jpeg",
-              "/images/rooms/deluxe/3.jpeg",
-              "/images/rooms/deluxe/4.jpeg",
-              "/images/rooms/deluxe/5.jpeg",
-              "/images/rooms/deluxe/6.jpeg",
-              "/images/rooms/deluxe/7.jpeg",
-              "/images/rooms/deluxe/8.jpeg",
-              "/images/rooms/deluxe/9.jpeg",
-              "/images/rooms/deluxe/10.jpeg",
-            ].map((src, index) => (
-              <div
-                key={index}
-                className="relative h-[280px] overflow-hidden rounded-2xl"
-              >
-                <Image
-                  src={src}
-                  alt={`Deluxe Room image ${index + 1}`}
-                  fill
-                  className="object-cover transition duration-700 hover:scale-105"
-                />
-              </div>
-            ))}
-          </div>
-
-        </div>
-
-      </div>
-    </section>
+    <RoomLandingPage
+      titleMain="Deluxe Room"
+      titleAccent="in Ayodhya"
+      heroDescription="A peaceful and thoughtfully designed stay for solo travellers and couples who want comfort, convenience, and proximity to Ram Mandir."
+      roomKey="Deluxe Room"
+      images={deluxeRoomImages}
+      imageAltPrefix="Deluxe Room at Paarvi Palace in Ayodhya image"
+      detailHeading="Thoughtfully Designed for Everyday Comfort"
+      detailParagraphs={[
+        "Our Deluxe Rooms at Paarvi Palace offer a calm and refined stay experience with practical amenities, restful interiors, and a peaceful atmosphere for guests visiting Ayodhya.",
+        "If you are comparing room options, the Deluxe Room is a smart fit for guests who want comfort, convenience, and value without needing the larger footprint of an Executive Room or Family Suite.",
+      ]}
+      featureHeading="Key Features of the Deluxe Room"
+      featureList={[
+        "Spacious interiors suitable for solo travellers, couples, and small families",
+        "One king-size bed with plush bedding for two guests",
+        "Air-conditioned room with geyser and 24/7 hot water",
+        "High-speed Wi-Fi, flat-screen TV, and modern amenities",
+        "Dedicated work desk ideal for business travellers",
+        "24/7 room service and daily housekeeping",
+      ]}
+      featureCards={[
+        "Spacious interiors designed for comfort",
+        "One king-size bed for two guests",
+        "Air-conditioned room with geyser",
+        "High-speed Wi-Fi and flat-screen TV",
+        "Modern attached bathroom with hot water",
+        "Dedicated work desk for business travellers",
+        "24/7 room service and housekeeping",
+        "On-site parking space for up to 15 cars",
+      ]}
+      whyTitle="A Strong Choice for Simple, Comfortable Stays in Ayodhya"
+      whyDescription="Guests looking for a Deluxe Room usually want a clean, comfortable, well-located option that feels easy to book and easy to trust. This room category works especially well for short pilgrim visits, couple stays, and practical overnight plans."
+      whyPoints={[
+        "Comfortable for solo travellers and couples",
+        "Balanced option for budget and convenience",
+        "Clear AC and Non-AC pricing choices",
+        "Useful for short pilgrim and leisure stays",
+      ]}
+      galleryTitle="Inside the Deluxe Room"
+      galleryIntro="A closer look at the comfort, layout, and peaceful ambience that define our Deluxe Room experience at Paarvi Palace."
+      faqs={deluxeFaqs}
+      faqTitle="FAQs for the Deluxe Room"
+      faqIntro="These answers help guests quickly understand whether the Deluxe Room is the right match for their stay style, budget, and travel plan."
+    />
   );
 }

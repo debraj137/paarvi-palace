@@ -3,7 +3,7 @@
 import { useState } from "react";
 import BookingModal from "@/components/BookingModal";
 
-export default function ExecutiveRoomHeroActions() {
+export default function RoomHeroActions() {
   const [open, setOpen] = useState(false);
 
   return (

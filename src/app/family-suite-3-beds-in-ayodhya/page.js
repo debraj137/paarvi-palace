@@ -1,127 +1,113 @@
-import NearbyAttractions from "@/components/NearbyAttractions";
-import Image from "next/image";
+import RoomLandingPage from "@/components/RoomLandingPage";
+
+const familySuiteThreeBedsFaqs = [
+  {
+    question: "Who is the Family Suite (3 beds) best suited for?",
+    answer:
+      "This suite is a strong fit for larger families, relatives travelling together, and small groups who need more beds and more shared space during their stay in Ayodhya.",
+  },
+  {
+    question: "Does the Family Suite (3 beds) offer AC and Non-AC options?",
+    answer:
+      "Yes. Guests can choose AC or Non-AC options based on comfort preference, budget, and season at the time of booking.",
+  },
+  {
+    question: "What amenities are available in the Family Suite (3 beds)?",
+    answer:
+      "Guests can expect Wi-Fi, a flat-screen TV, hot water, housekeeping, room service, practical seating and storage, and a layout designed for group comfort.",
+  },
+  {
+    question: "How do I reserve the Family Suite (3 beds)?",
+    answer:
+      "Guests can call Paarvi Palace directly or use the booking form on the page to request room availability, preferred dates, and reservation support.",
+  },
+];
+
+const familySuiteThreeBedsImages = [
+  "/images/rooms/family-suite(3-bed)/1.jpeg",
+  "/images/rooms/family-suite(3-bed)/2.jpeg",
+  "/images/rooms/family-suite(3-bed)/3.jpeg",
+];
 
 export const metadata = {
   title: "Family Suite (3 beds) in Ayodhya | Paarvi Palace Near Ram Mandir",
   description:
-    "Stay in a spacious Family Suite (3 beds) at Paarvi Palace, Ayodhya. Ideal for families and groups seeking comfort, space, and proximity to Ram Mandir.",
+    "Stay in a spacious Family Suite (3 beds) at Paarvi Palace, Ayodhya. AC and Non-AC suite options for families and small groups near Ram Mandir.",
+  keywords: [
+    "family suite 3 beds in ayodhya",
+    "3 bed family room ayodhya",
+    "group suite near ram mandir",
+    "paarvi palace family suite 3 beds",
+    "large family room in ayodhya",
+  ],
+  alternates: {
+    canonical: "/family-suite-3-beds-in-ayodhya",
+  },
+  openGraph: {
+    title: "Family Suite (3 beds) in Ayodhya | Paarvi Palace Near Ram Mandir",
+    description:
+      "Explore the Family Suite (3 beds) at Paarvi Palace with spacious group-friendly interiors and AC and Non-AC options near Ram Mandir.",
+    url: "https://www.paarvipalace.com/family-suite-3-beds-in-ayodhya",
+    siteName: "Paarvi Palace",
+    images: [
+      {
+        url: "/images/rooms/family-suite(3-bed)/1.jpeg",
+        width: 1200,
+        height: 800,
+        alt: "Family Suite (3 beds) at Paarvi Palace in Ayodhya",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
 };
 
 export default function FamilySuiteThreeBedsPage() {
   return (
-    <section className="bg-[#faf9f7]">
-      <div className="border-b border-[#e5ddd3]">
-        <div className="max-w-7xl mx-auto px-6 py-24 text-center">
-          <span className="uppercase tracking-[0.35em] text-xs text-[#8b7a5e]">
-            Paarvi Palace | Ayodhya
-          </span>
-
-          <h1 className="mt-6 text-4xl md:text-5xl font-light tracking-wide text-[#2b2118]">
-            Family Suite (3 beds)
-          </h1>
-
-          <div className="mx-auto mt-6 w-20 h-[1px] bg-[#c9a24d]" />
-
-          <p className="mt-8 max-w-2xl mx-auto text-gray-600 leading-relaxed">
-            A spacious suite designed for larger families and small groups,
-            offering extra sleeping space, comfort, and a peaceful stay near
-            Ram Mandir.
-          </p>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 py-24">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div>
-            <h2 className="text-3xl font-light tracking-wide text-[#2b2118]">
-              More Space for Comfortable Group Stays
-            </h2>
-
-            <p className="mt-6 text-gray-600 leading-relaxed">
-              Our Family Suite (3 beds) at Paarvi Palace is thoughtfully
-              arranged for families and groups who need more room while staying
-              in Ayodhya. The layout balances comfort, practicality, and a calm
-              atmosphere.
-            </p>
-
-            <p className="mt-6 text-gray-600 leading-relaxed">
-              Whether you are travelling with children, relatives, or a small
-              group of pilgrims, this suite gives everyone extra space to relax
-              after a busy day in the city.
-            </p>
-
-            <div className="mt-10">
-              <h3 className="text-xl font-light tracking-wide text-[#2b2118]">
-                Key Features of the Family Suite (3 beds)
-              </h3>
-
-              <ul className="mt-6 space-y-3 text-gray-600 leading-relaxed list-disc list-inside">
-                <li>Spacious suite with 3 beds for families and group stays</li>
-                <li>Comfortable room layout with practical sleeping arrangements</li>
-                <li>Air-conditioned room with geyser and 24/7 hot water</li>
-                <li>High-speed Wi-Fi, flat-screen TV, and modern amenities</li>
-                <li>Useful storage space and seating for a relaxed stay</li>
-                <li>24x7 room service and daily housekeeping</li>
-              </ul>
-            </div>
-
-            <NearbyAttractions />
-          </div>
-
-          <div className="grid grid-cols-2 gap-6">
-            {[
-              "Spacious suite with 3 comfortable beds",
-              "Ideal for larger families and small groups",
-              "Air-conditioned comfort with geyser",
-              "High-speed Wi-Fi and flat-screen TV",
-              "Modern attached bathroom with hot water",
-              "Storage and seating for added convenience",
-              "24x7 room service and housekeeping",
-              "Peaceful location near Ram Mandir",
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="border border-[#e5ddd3] rounded-xl p-6 bg-white/70"
-              >
-                <p className="text-sm tracking-wide text-[#2b2118]">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-28">
-          <h2 className="text-3xl font-light tracking-wide text-[#2b2118] text-center">
-            Inside the Family Suite (3 beds)
-          </h2>
-
-          <p className="mt-4 text-center text-gray-600 max-w-2xl mx-auto">
-            Explore the spacious setup designed for families and groups seeking
-            extra room and comfort at Paarvi Palace.
-          </p>
-
-          <div className="mt-14 grid md:grid-cols-3 gap-8">
-            {[
-              "/images/rooms/family-suite(3-bed)/1.jpeg",
-              "/images/rooms/family-suite(3-bed)/2.jpeg",
-              "/images/rooms/family-suite(3-bed)/3.jpeg",
-            ].map((src, index) => (
-              <div
-                key={index}
-                className="relative h-[280px] overflow-hidden rounded-2xl"
-              >
-                <Image
-                  src={src}
-                  alt={`Family Suite (3 beds) image ${index + 1}`}
-                  fill
-                  className="object-cover transition duration-700 hover:scale-105"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+    <RoomLandingPage
+      titleMain="Family Suite"
+      titleAccent="(3 beds) in Ayodhya"
+      heroDescription="A spacious suite for larger families and small groups who need extra sleeping space, greater flexibility, and a peaceful stay near Ram Mandir."
+      roomKey="Family Suite (3 beds)"
+      images={familySuiteThreeBedsImages}
+      imageAltPrefix="Family Suite 3 beds at Paarvi Palace in Ayodhya image"
+      detailHeading="More Space for Comfortable Group Stays"
+      detailParagraphs={[
+        "Our Family Suite (3 beds) at Paarvi Palace is thoughtfully arranged for families and groups who need more room while staying in Ayodhya. The layout balances comfort, practicality, and a calm atmosphere.",
+        "If you are planning a stay with children, relatives, or a small pilgrim group, this suite gives everyone more personal space without separating the group across different rooms.",
+      ]}
+      featureHeading="Key Features of the Family Suite (3 beds)"
+      featureList={[
+        "Spacious suite with 3 beds for families and group stays",
+        "Comfortable room layout with practical sleeping arrangements",
+        "Air-conditioned room with geyser and 24/7 hot water",
+        "High-speed Wi-Fi, flat-screen TV, and modern amenities",
+        "Useful storage space and seating for a relaxed stay",
+        "24/7 room service and daily housekeeping",
+      ]}
+      featureCards={[
+        "Spacious suite with 3 comfortable beds",
+        "Ideal for larger families and small groups",
+        "Air-conditioned comfort with geyser",
+        "High-speed Wi-Fi and flat-screen TV",
+        "Modern attached bathroom with hot water",
+        "Storage and seating for added convenience",
+        "24/7 room service and housekeeping",
+        "Peaceful location near Ram Mandir",
+      ]}
+      whyTitle="A Practical Choice for Larger Shared Family Stays"
+      whyDescription="Guests searching for a 3-bed family suite usually want to keep everyone together while still maintaining comfort and flexibility. This suite works well when more than two sleepers need to share one space without making the stay feel cramped."
+      whyPoints={[
+        "Useful for larger families and pilgrim groups",
+        "Better group comfort without splitting rooms",
+        "Functional layout for shared overnight stays",
+        "Clear AC and Non-AC room options",
+      ]}
+      galleryTitle="Inside the Family Suite (3 beds)"
+      galleryIntro="Explore the spacious setup designed for families and groups seeking extra room and shared comfort at Paarvi Palace."
+      faqs={familySuiteThreeBedsFaqs}
+      faqTitle="FAQs for the Family Suite (3 beds)"
+      faqIntro="These answers help guests compare group-friendly room choices and decide whether this suite fits their stay requirements."
+    />
   );
 }

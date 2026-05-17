@@ -5,10 +5,13 @@ import Image from "next/image";
 
 export const metadata = {
   title:
-    "Hotels in Ayodhya | Book with Free Cancellation",
+    "Hotel Booking in Ayodhya | Book with Free Cancellation",
   description:
-    "Looking for hotels in Ayodhya book with free cancellation? Stay at Paarvi Palace near Ram Mandir for a comfortable, flexible, and family-friendly experience.",
+    "Looking for hotel booking in Ayodhya with free cancellation? Stay at Paarvi Palace near Ram Mandir for a comfortable, flexible, and family-friendly booking experience.",
   keywords: [
+    "hotel booking in ayodhya",
+    "book hotel in ayodhya online",
+    "ayodhya room booking",
     "Hotels in Ayodhya Book with Free Cancellation",
     "hotels in ayodhya with free cancellation",
     "book hotel in ayodhya with free cancellation",
@@ -19,9 +22,9 @@ export const metadata = {
     canonical: "/hotels-in-ayodhya-book-with-free-cancellation",
   },
   openGraph: {
-    title: "Hotels in Ayodhya | Book with Free Cancellation",
+    title: "Hotel Booking in Ayodhya | Book with Free Cancellation",
     description:
-      "Looking for hotels in Ayodhya book with free cancellation? Stay at Paarvi Palace near Ram Mandir for a comfortable, flexible, and family-friendly experience.",
+      "Looking for hotel booking in Ayodhya with free cancellation? Stay at Paarvi Palace near Ram Mandir for a comfortable, flexible, and family-friendly booking experience.",
     url: "https://www.paarvipalace.com/hotels-in-ayodhya-book-with-free-cancellation",
     siteName: "Paarvi Palace",
     images: [
@@ -72,14 +75,15 @@ export default function HotelsInAyodhyaFreeCancellationPage() {
             </span>
 
             <h1 className="mt-6 text-4xl md:text-5xl font-light tracking-wide text-[#2b2118]">
-              Hotels in Ayodhya Book with Free Cancellation
+              Hotel Booking in Ayodhya with Free Cancellation
             </h1>
 
             <div className="mx-auto mt-6 w-20 h-[1px] bg-[#c9a24d]" />
 
             <p className="mt-8 max-w-2xl mx-auto text-gray-600 leading-relaxed">
               Enjoy a comfortable stay near Ram Mandir with the flexibility to
-              book your Ayodhya trip with more confidence and convenience.
+              book your Ayodhya trip with more confidence, convenience, and
+              support for changing travel plans.
             </p>
           </div>
         </div>
@@ -93,17 +97,17 @@ export default function HotelsInAyodhyaFreeCancellationPage() {
 
               <p className="mt-6 text-gray-600 leading-relaxed">
                 Paarvi Palace is a practical choice for travellers searching for
-                hotels in Ayodhya book with free cancellation. Whether your
-                plans are fixed or still evolving, our stay experience is
-                designed to keep your visit comfortable, simple, and
-                stress-free.
+                hotel booking in Ayodhya with free cancellation. Whether your
+                plans are fixed or still evolving, this is a convenient way to
+                book hotel in Ayodhya online while keeping your visit
+                comfortable, simple, and stress-free.
               </p>
 
               <p className="mt-6 text-gray-600 leading-relaxed">
                 With clean rooms, family-friendly options, and convenient
-                access to Ram Mandir and other key attractions, Paarvi Palace
-                offers a peaceful base for pilgrims, couples, and families
-                visiting Ayodhya.
+                access to Ram Mandir, Shri Ram Janmabhoomi, and Ayodhya Dham
+                railway station, Paarvi Palace offers a peaceful base for
+                pilgrims, couples, and families visiting Ayodhya.
               </p>
 
               <div className="mt-10">

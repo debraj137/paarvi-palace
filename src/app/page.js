@@ -8,11 +8,21 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 
 export const metadata = {
-  title: "Hotels in Ayodhya | Paarvi Palace Near Ram Mandir",
+  title: "Best Hotel in Ayodhya Near Ram Mandir | Paarvi Palace",
   description:
-    "Discover Paarvi Palace in Ayodhya with rooms from Rs 501 to Rs 2000, parking, selected kitchen access, and stays for couples, families, and pilgrims.",
+    "Discover Paarvi Palace, a comfortable hotel in Ayodhya near Ram Mandir with family-friendly rooms, parking, and convenient hotel booking in Ayodhya for pilgrims, couples, and groups.",
   keywords: [
+    "best hotel in ayodhya near ram mandir",
+    "hotel in ayodhya",
+    "hotel in ayodhya for family",
+    "family hotel in ayodhya",
+    "hotels in ayodhya for family stay",
+    "premium hotel in ayodhya",
     "hotels in ayodhya",
+    "ayodhya hotel",
+    "hotel booking in ayodhya",
+    "book hotel in ayodhya online",
+    "ayodhya room booking",
     "Hotels in Ayodhya Book with Free Cancellation",
     "hotels in ayodhya with free cancellation",
     "hotels rs 1001 to rs 2000",
@@ -33,7 +43,7 @@ const homeFaqs = [
   {
     question: "How far is Paarvi Palace from Ram Mandir in Ayodhya?",
     answer:
-      "Paarvi Palace offers a convenient stay location for guests visiting Ram Mandir and other key Ayodhya attractions. Guests can contact the property directly for the latest travel guidance and route support.",
+      "Paarvi Palace offers a convenient stay location for guests visiting Ram Mandir, Shri Ram Janmabhoomi, and other key Ayodhya attractions. Guests can contact the property directly for the latest travel guidance and route support.",
   },
   {
     question: "What types of rooms are available at Paarvi Palace?",
@@ -48,7 +58,7 @@ const homeFaqs = [
   {
     question: "Is Paarvi Palace suitable for families and pilgrims?",
     answer:
-      "Yes, the property is well suited for families, pilgrims, couples, and general travelers looking for a calm and comfortable stay in Ayodhya.",
+      "Yes, the property is well suited for families, pilgrims, couples, and general travelers looking for a calm and comfortable stay in Ayodhya near Ram Mandir.",
   },
 ];
 

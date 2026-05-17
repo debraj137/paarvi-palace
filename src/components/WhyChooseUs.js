@@ -5,9 +5,14 @@ const reasons = [
       "Paarvi Palace offers a calm, comfortable, and welcoming stay for couples looking for privacy, cleanliness, and easy access to Ayodhya's major attractions.",
   },
   {
+    title: "Family Hotel in Ayodhya",
+    description:
+      "Families looking for a hotel in Ayodhya near Ram Mandir can choose from spacious room options, practical amenities, and a peaceful setting that works well for short visits and longer family stays.",
+  },
+  {
     title: "Hotels With Parking",
     description:
-      "Guests arriving by car can enjoy the convenience of on-site parking, making Paarvi Palace a practical choice among hotels with parking in Ayodhya.",
+      "Guests arriving by car can enjoy the convenience of on-site parking, making Paarvi Palace a practical choice for travellers searching for a hotel with parking in Ayodhya.",
   },
   {
     title: "Early Check In Hotels",
@@ -17,7 +22,7 @@ const reasons = [
   {
     title: "Luxury Hotels",
     description:
-      "With refined interiors, thoughtful hospitality, and peaceful surroundings, Paarvi Palace delivers a stay experience that feels warm, elegant, and comfortable.",
+      "With refined interiors, thoughtful hospitality, and peaceful surroundings, Paarvi Palace delivers a stay experience that feels warm, elegant, and comfortable for guests seeking a luxury hotel in Ayodhya.",
   },
   {
     title: "Hotels With Kitchen",
@@ -27,7 +32,7 @@ const reasons = [
   {
     title: "Hotels Near Ayodhya Dham Railway Station",
     description:
-      "Paarvi Palace is a convenient stay option for travellers searching for hotels near Ayodhya Dham railway station while also wanting easy access to Ram Mandir.",
+      "Paarvi Palace is a convenient stay option for travellers searching for a hotel near Ayodhya Dham railway station while also wanting easy access to Ram Mandir.",
   },
 ];
 
@@ -48,8 +53,9 @@ export default function WhyChooseUs() {
 
           <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-gray-600">
             Paarvi Palace combines comfort, convenience, and thoughtful
-            hospitality for guests visiting Ayodhya for pilgrimage, family
-            travel, or a peaceful getaway.
+            hospitality for guests looking for a hotel in Ayodhya for family
+            travel, pilgrimage stays, couple trips, or a peaceful getaway near
+            Ram Mandir.
           </p>
         </div>
 

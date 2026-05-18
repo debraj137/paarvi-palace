@@ -10,7 +10,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 export const metadata = {
   title: "Best Hotel in Ayodhya Near Ram Mandir | Paarvi Palace",
   description:
-    "Discover Paarvi Palace, a comfortable hotel in Ayodhya near Ram Mandir with family-friendly rooms, parking, and convenient hotel booking in Ayodhya for pilgrims, couples, and groups.",
+    "Stay at Paarvi Palace, a family-friendly hotel in Ayodhya near Ram Mandir with comfortable rooms, parking, and easy booking for pilgrims and couples.",
   keywords: [
     "best hotel in ayodhya near ram mandir",
     "hotel in ayodhya",
